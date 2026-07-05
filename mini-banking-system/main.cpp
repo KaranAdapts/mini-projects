@@ -44,23 +44,27 @@ void withdraw(double amount, double currentBalance){
 
 double proceedOperation(int userInput, double balance, double amount){
     
-    if (userInput == 1){
+    switch(userInput){
+
+    case 1: {
         deposit(amount, balance);
         return balance;
     }
-    else if (userInput == 2){
+    case 2: {
         withdraw(amount, balance);
         return balance; 
     }
-    else if (userInput == 3){
+    case 3: {
         checkBalance();
         return balance;
     }
-    else {
+    default:  {
         std::cout << "\nInvalid Option! Choose again!\n\n";
         int reUserInput{takeInput()};
         proceedOperation(reUserInput, balance, enterAmount(reUserInput));   
         return reUserInput;
+    }
+    
     }
 }
 

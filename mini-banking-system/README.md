@@ -51,3 +51,6 @@ Would redesign parts differently now.
 * Only a Single account can exist at a time. 
 * File I/O for persistent balance storage (after Ch 28 but could come earlier if needed in a mini-project/project)
 
+## Updates 
+**July 4, 2026**
+* Refactored `proceedOperation()` by replacing the if-else-if conditional logic with Switch Case Conditional Statements for better code structure and readability. 
